@@ -1,0 +1,45 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "signupUsers": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    
+    
+    {
+      "fullname": "rangarajan",
+      "email": "rangarajan@gmail.com",
+      "password": "12345",
+      "mobile": 7708945974,
+      "id": 4
+    },
+   
+    
+   
+    {
+      "fullname": "Ranga",
+      "email": "ranga@gmail.com",
+      "password": "1234567",
+      "mobile": 1234567890,
+      "id": 8
+    },
+    {
+      "fullname": "abcd",
+      "email": "abcd@gmail.com",
+      "password": "12345",
+      "mobile": 1234567890,
+      "id": 9
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,52 @@
+<div class="row">
+    <div class="col-lg-4">
+      <form action="#" #heroForm="ngForm">
+        <div class="mb-2">
+          <label class="form-label" for="">Name</label>
+          <input
+            class="form-control"
+            type="text"
+            ngModel
+            #name="ngModel"
+            name="name"
+            required
+          />
+          <div
+            class="text-danger"
+            *ngIf="submitted && name.errors && name.errors['required']"
+          >
+            Name is required.
+          </div>
+        </div>
+        <div class="mb-2">
+          <label class="form-label" for="">Email</label>
+          <input
+            class="form-control"
+            type="text"
+            ngModel
+            #email="ngModel"
+            name="email"
+            required
+          />
+        </div>
+        <div class="mb-2">
+          <label class="form-label" for="">Phone</label>
+          <input
+            class="form-control"
+            type="text"
+            ngModel
+            #phone="ngModel"
+            name="phone"
+            required
+          />
+        </div>
+  
+        <button class="btn btn-success m-4" (click)="submit(heroForm)">
+          Submit
+        </button>
+        <!-- {{ message }} -->
+        <!-- <p [class]="message" [id]="message">test para</p> -->
+      </form>
+    </div>
+  </div>
+  

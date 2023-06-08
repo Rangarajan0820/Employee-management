@@ -1,0 +1,46 @@
+<div class="container-fluid my-5">
+    <div class="table-responsive">
+      <table id="example" class="display text-center" style="width: 100%">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Mobile no</th>
+            <th>city</th>
+            <th>Role</th>
+            
+            <th>Action</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of dataList">
+            <td>{{ item.id }}</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.email }}</td>
+            <td>{{ item.mobileno }}</td>
+            <td>{{ item.city }}</td>
+            <td>{{ item.role }}</td>
+            
+            <td>
+              <button
+                type="button"
+                class="btn btn-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                (click)="edit(item)"
+              >
+                <i class="bi bi-pencil-square"></i> Edit
+              </button>
+            </td>
+            <td>
+              <button class="btn btn-danger" (click)="delete(item)">
+                <i class="bi bi-trash3-fill"></i> Delete
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>

@@ -1,0 +1,187 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+
+
+<div class="container register-form" >
+
+<form
+  
+[formGroup]="profileForm"
+(ngSubmit)="onSubmit()">
+
+
+ 
+            <div class="form" >
+            
+                <div class="note">
+                    
+                </div>
+               
+
+                <div class="form-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                              
+                              <input
+                              type="text"
+                              class="form-control border-primary my-3"
+                              id="name"
+                              formControlName="name"
+                              placeholder="Enter your name**"
+                              [ngClass]="{ 'is-invalid': submitted && f['name'].errors }"
+                            />
+                            <div *ngIf="submitted && f['name'].errors" class="invalid-feedback">
+                              <div *ngIf="f['name'].errors['required']">Name is required *</div>
+                           
+                            </div>
+                            
+                            <label for="name">Name</label>
+                            <div class="form-group">
+                              <input
+                              type="number"
+                              class="form-control border-primary my-3"
+                              id="mobileno"
+                              formControlName="mobileno"
+                              placeholder="Enter your Mobileno*"
+                              [ngClass]="{ 'is-invalid': submitted && f['mobileno'].errors }"
+                            />
+                            <div *ngIf="submitted && f['mobileno'].errors" class="invalid-feedback">
+                              <div *ngIf="f['mobileno'].errors['required']">Mobileno is required *</div>
+                            </div>
+                            
+                                <label for="mobileno">Mobileno</label>
+                            </div>
+                            <div class="form-group">
+                              <input
+                              type="text"
+                              class="form-control border-primary my-3"
+                              id="role"
+                              formControlName="role"
+                              placeholder="Enter your Role**"
+                              [ngClass]="{ 'is-invalid': submitted && f['role'].errors }"
+                            />
+                            <div *ngIf="submitted && f['role'].errors" class="invalid-feedback">
+                              <div *ngIf="f['role'].errors['required']">Role is required *</div>
+                            </div>
+                            
+                                <label for="role">Role</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                              <input
+                              type="password"
+                              class="form-control border-primary my-3"
+                              id="password"
+                              placeholder="Enter your Password**"
+                              formControlName="password"
+                              [ngClass]="{ 'is-invalid': submitted && f['password'].errors }"
+                            />
+                            <div *ngIf="submitted && f['password'].errors" class="invalid-feedback">
+                              <div *ngIf="f['password'].errors['required']">Password is required *</div>
+                            </div>
+                            
+                          <label for="password">Password</label>
+                            </div>
+                            <div class="form-group">
+                              <input
+                              type="email"
+                              class="form-control border-primary my-3"
+                              id="email"
+                              placeholder="Enter your Email**"
+                              formControlName="email"
+                              [ngClass]="{ 'is-invalid': submitted && f['email'].errors }"
+                            />
+                            <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+                              <div *ngIf="f['email'].errors['required']">Email is required *</div>
+                            </div>  
+                            <i class="bi bi-lock-fill me-2 text-primary"></i>
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="form-group">
+                              <input
+                              type="text"
+                              class="form-control border-primary my-3"
+                              id="city"
+                              placeholder="Enter your City**"
+                              formControlName="city"
+                              [ngClass]="{ 'is-invalid': submitted && f['city'].errors }"
+                            />
+                            <div *ngIf="submitted && f['city'].errors" class="invalid-feedback">
+                              <div *ngIf="f['city'].errors['required']">City is required *</div>
+                            </div>  
+                            
+                              <label for="city">City</label>
+                          </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn">Submit</button>
+                 
+                </div>
+                </div>
+              </div>
+</form>
+</div>
+             
+            
+            
+
+
+              
+                
+             
+         
+            
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

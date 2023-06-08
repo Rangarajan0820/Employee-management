@@ -1,0 +1,80 @@
+<div class="container-fluid p-5 shadow-lg my-3">
+    <form action="" [formGroup]="sampleForm" (ngSubmit)="onSubmit()">
+      <div class="row justify-content-start my-4">
+        <div class="col-lg-3 col-md-4 mb-2">
+          <i class="fa fa-user me-2" aria-hidden="true"></i>
+          <label for="name" class="form-label">Name</label>
+          <input
+            type="text"
+            class="form-control border-success"
+            formControlName="name"
+            [ngClass]="{ 'is-invalid': submitted && f['name'].errors }"
+          />
+          <div *ngIf="submitted && f['name'].errors" class="invalid-feedback">
+            <div *ngIf="f['name'].errors['required']">Name is required *</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mb-2">
+          <i class="fa fa-inbox me-2" aria-hidden="true"></i>
+          <label for="name" class="form-label">Email</label>
+          <input
+            type="text"
+            class="form-control border-success"
+            formControlName="email"
+            [ngClass]="{ 'is-invalid': submitted && f['email'].errors }"
+          />
+          <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+            <div *ngIf="f['email'].errors['required']">email is required *</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mb-2">
+          <i class="fa fa-phone me-2" aria-hidden="true"></i>
+          <label for="name" class="form-label">Mobileno</label>
+          <input
+            type="number"
+            class="form-control border-success"
+            formControlName="mobileno"
+            [ngClass]="{ 'is-invalid': submitted && f['mobileno'].errors }"
+          />
+          <div *ngIf="submitted && f['mobileno'].errors" class="invalid-feedback">
+            <div *ngIf="f['mobileno'].errors['required']">
+              phone number is required *
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <i class="fa fa-calendar me-2" aria-hidden="true"></i>
+          <label for="name" class="form-label">city</label>
+          <input
+            class="form-control border-success"
+            formControlName="city"
+           
+            [ngClass]="{ 'is-invalid': submitted && f['city'].errors }"
+          />
+          <div *ngIf="submitted && f['city'].errors" class="invalid-feedback">
+            <div *ngIf="f['city'].errors['required']">City is required *</div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <i class="fa fa-calendar me-2" aria-hidden="true"></i>
+            <label for="name" class="form-label">Password</label>
+            <input
+            type="password"
+              class="form-control border-success"
+              formControlName="password"
+             
+              [ngClass]="{ 'is-invalid': submitted && f['password'].errors }"
+            />
+            <div *ngIf="submitted && f['password'].errors" class="invalid-feedback">
+              <div *ngIf="f['password'].errors['required']">Password is required *</div>
+            </div>
+        
+
+        <div class="text-center mt-3">
+          <button class="btn btn-outline-secondary">Submit</button>
+        </div>
+      </div>
+        </div>
+      </div>
+    </form>
+  </div>
+

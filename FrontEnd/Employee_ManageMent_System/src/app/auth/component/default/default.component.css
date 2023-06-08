@@ -1,0 +1,7 @@
+.nav-item a {
+    font-weight: bold;
+  }
+  .nav-item a:hover {
+    background-color: rgba(128, 128, 128, 0.292);
+    border-radius: 10px;
+  }
